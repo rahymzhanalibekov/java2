@@ -1,4 +1,6 @@
-package ru.geekbrains.java_two.lesson_a;
+package home_work.ru.geekbrains.java_two.lesson_a;
+
+import org.jetbrains.annotations.NotNull;
 
 import javax.swing.*;
 import java.awt.*;
@@ -22,10 +24,12 @@ public class MainCircles extends JFrame {
             sprites[i].render(canvas, g);
         }
     }
-    void onDrawCanvas(GameCanvas c, Graphics g, float deltaTime) {
+
+     void onDrawCanvas(GameCanvas c, Graphics g, float deltaTime) {
         update(c, deltaTime);
         render(c, g);
     }
+
 
     private void initApplication() {
         for (int i = 0; i < sprites.length; i++) {
@@ -36,7 +40,7 @@ public class MainCircles extends JFrame {
     private MainCircles() {
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setBounds(POS_X, POS_Y, WINDOW_WIDTH, WINDOW_HEIGHT);
-        setTitle("Circles");
+        setTitle("Circles2");
         GameCanvas canvas = new GameCanvas(this);
         add(canvas);
         initApplication();

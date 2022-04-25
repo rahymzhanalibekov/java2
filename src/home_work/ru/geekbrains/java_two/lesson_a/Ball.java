@@ -1,4 +1,4 @@
-package ru.geekbrains.java_two.lesson_a;
+package home_work.ru.geekbrains.java_two.lesson_a;
 
 import java.awt.*;
 import java.util.Random;
